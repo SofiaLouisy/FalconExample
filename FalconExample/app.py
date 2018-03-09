@@ -1,5 +1,6 @@
 import falcon
 import json
+import io
 
 api = application = falcon.API()
 
@@ -9,9 +10,10 @@ class ThingsResource(object):
     def on_get(self, req, resp):
         """Handles GET requests"""
         resp.status = falcon.HTTP_200
-        greeting = 'Hello world!'
-        print(json.dumps(greeting))
+        greeting = 'Hello world /Server!'
+        #print(json.dumps(greeting))
         resp.body = json.dumps(greeting)
+        #resp.body = greeting
         
     def on_post(self, req, resp):
         """Handles POST requests"""
@@ -51,4 +53,3 @@ orders = OrdersResource()
 api.add_route('/things', things)
 api.add_route('/orders/{user_id}', orders)
 #api.add_route('/colorsorbeasts', colorsorbeast)
-

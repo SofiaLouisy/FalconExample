@@ -2,11 +2,14 @@
 
 ## To do
 
+* Create an Access-Control-Allow-Origin, so that my client can HTTP (and not HTTPS) to my server.
 * Make frontside request backside
 * Make a loop in fronside to request a post
 * Connect backside to database
 * Deploy the server to a cloud service. 
 * Configure so only clients of Stickybit network can access
+
+
 
 ## Done
 * Version handling with git and bitbucket
