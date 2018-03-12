@@ -9,14 +9,8 @@
 * Deploy the server to a cloud service. 
 * Configure so only clients of Stickybit network can access
 
-
-
 ## Done
 * Version handling with git and bitbucket
-
-
-
-
 
 ## Notes
 * In backside, make an update over HTTP that updates the page in different intervals 
